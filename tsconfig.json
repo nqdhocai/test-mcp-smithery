@@ -1,5 +1,4 @@
 {
-  "extends": "../../tsconfig.json",
   "compilerOptions": {
     "target": "es2016",                                  /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
     "module": "commonjs",                                /* Specify what module code is generated. */
@@ -11,6 +10,6 @@
     "rootDir": "."                              /* Skip type checking all .d.ts files. */
   },
   "include": [
-    "./**/*.ts"
+    "*.ts"
   ]
 }
