@@ -5,15 +5,15 @@ FROM node:18-alpine AS builder
 WORKDIR /app
 
 # Copy package files first for dependency installation
-COPY package.json package-lock.json ./
+COPY package*.json ./
 
 # Install dependencies
 RUN npm install
 
-# Copy the rest of the application files
+# Copy source code
 COPY . .
 
-# Build the application
+# Build the TypeScript application
 RUN npm run build
 
 # Stage 2: Release
@@ -30,7 +30,7 @@ COPY --from=builder /app/package-lock.json /app/package-lock.json
 # Set environment to production
 ENV NODE_ENV=production
 
-# Install production dependencies
+# Install only production dependencies
 RUN npm ci --omit=dev
 
 # Command to run the application
