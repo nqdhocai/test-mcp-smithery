@@ -1,0 +1,26 @@
+{
+  "name": "test-mcp-smithery",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nqdhocai/test-mcp-smithery.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nqdhocai/test-mcp-smithery/issues"
+  },
+  "homepage": "https://github.com/nqdhocai/test-mcp-smithery#readme",
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  }
+}
