@@ -1,0 +1,29 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build outputs
+dist/
+build/
+out/
+*.tsbuildinfo
+
+# Optional: nếu dùng ts-node
+.cache/
+
+# Logs
+logs/
+*.log
+
+# Environment variables
+.env
+.env.*
+
+# VSCode settings (optional)
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
